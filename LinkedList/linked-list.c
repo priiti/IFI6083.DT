@@ -1,6 +1,5 @@
 /*
  Linked list
- Priit Parl
  */
 
 #include <stdio.h>

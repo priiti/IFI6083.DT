@@ -1,3 +1,7 @@
+/*
+ Põhiidee: Mööda massiivi liigutakse vasakult paremale. Vasakule tekib sorteeritud massiiv. Igal sammul otsitakse järgmise elemendi kohale õiget (suuruselt sobivat) arvu, mis ühtlasi on sorteerimata osa kõige väiksem arv.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

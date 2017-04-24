@@ -108,9 +108,9 @@ int main() {
     char answer, playAgain;
     char newAnimal[30], question[30], oldAnimal[30];
     
-    animals = pathNode("Kas ta on suur?");
-    addAnswerNo(animals, "Hiir");
-    addAnswerYes(animals, "Elevant");
+    animals = pathNode("Kas ta on suur? ");
+    addAnswerNo(animals, "Hiir ");
+    addAnswerYes(animals, "Elevant ");
     
     // Kysimuste esitamise ja puus liikumise tsykkel
     do {
@@ -127,22 +127,22 @@ int main() {
         }
         
         // Abi on looma sisaldava elemendi juures
-        printf("Kas see loom on %s [y / n]?", nodeText(helper));
+        printf("Kas see loom on %s [y / n]?\n", nodeText(helper));
         answer = yesOrNo();
         
         if (answer == 'n') {
-            printf("Mis looma m6tlesid?");
+            printf("Mis looma m6tlesid?\n");
             fgets(newAnimal, 30, stdin);
-            printf("Mida tema kohta kysida saab?");
+            printf("Mida tema kohta kysida saab?\n");
             fgets(question, 30, stdin);
             strcpy(oldAnimal, nodeText(helper));
             addAnswerNo(helper, oldAnimal);
             addAnswerYes(helper, newAnimal);
             addText(helper, question);
         } else {
-            printf("Tubli! Arvasid 6igesti.");
+            printf("Tubli! Arvasid 6igesti.\n");
         }
-        printf("Kas soovid veel m2ngida?");
+        printf("Kas soovid veel m2ngida?\n");
         playAgain = yesOrNo();
     } while (playAgain == 'y');
     

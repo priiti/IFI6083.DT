@@ -1,5 +1,7 @@
 /*
- Põhiidee: Omavahel võrreldakse paarikaupa kirjeid. Kui kaks kõrvuti asetsevat kirjet on vales järjekorras, tuleb nad vahetada. Peale ühekordset massiivi läbimist ei pruugi veel kõik kirjed paigas olla, kuid suurim on kindlasti sattunud viimasele positsioonile, st oma õigele kohale.
+ Põhiidee: Omavahel võrreldakse paarikaupa kirjeid. Kui kaks kõrvuti asetsevat kirjet on vales järjekorras, 
+ tuleb nad vahetada. Peale ühekordset massiivi läbimist ei pruugi veel kõik kirjed paigas olla, 
+ kuid suurim on kindlasti sattunud viimasele positsioonile, st oma õigele kohale.
  
  Keerukus: Halvimal juhul O(n2), parimal juhul O(n), keskmiseks loetakse siiski O(n2).
  */
